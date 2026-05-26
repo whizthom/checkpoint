@@ -46,4 +46,15 @@ func main() {
 	fmt.Println(HashCode("ABC")) // 198
 	fmt.Println(HashCode("hello"))
 
+
+	fmt.Println(HashCode("A"))
+	fmt.Println(HashCode("AB"))
+	fmt.Println(HashCode("BAC"))
+	fmt.Println(HashCode("Hello World"))
+
+	fmt.Println(HashCode("A"))           // Output: B
+	fmt.Println(HashCode("AB"))          // Output: CD
+	fmt.Println(HashCode("BAC"))         // Output: EDF
+	fmt.Println(HashCode("Hello World")) // Output: Spwwz+bz}wo
+
 }
