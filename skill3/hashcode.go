@@ -25,22 +25,18 @@ func HashCode(s string)int{
 
 
 
-func HashCode(dec string) string {
+func HashCode1(dec string) string {
+	
 	size := len(dec)
-	result := []byte{} // Create a slice to hold our new characters
+	result := []byte{}
 
-	for _, char := range dec {
-		// 1. Calculate the hash using the formula
-		hash := (int(char) + size) % 127
+	for _, ch := range dec{
+		hash := (int(ch) + size) % 127
 
-		// 2. Check if it's unprintable (less than 33)
-		if hash < 33 {
+		if hash < 33{
 			hash += 33
 		}
-
-		// 3. Convert back to a character and add to result
 		result = append(result, byte(hash))
 	}
-
 	return string(result)
 }
