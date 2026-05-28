@@ -1,0 +1,59 @@
+func ThirdTimeIsACharm(str string) string {
+
+	if len(str) < 3{
+		return "\n"
+	}
+
+	result := ""
+
+	for i := 2; i < len(str); i+=3{
+		result += string(str[i])
+	}
+	return result + "\n"
+
+}
+
+//Printrevcomb 
+func main() {
+	// Loop for the first digit (9 down to 2)
+	for d1 := '9'; d1 >= '2'; d1-- {
+		// Loop for the second digit (d1-1 down to 1)
+		for d2 := '8'; d2 >= '1'; d2-- {
+			// Loop for the third digit (d2-1 down to 0)
+			for d3 := '7'; d3 >= '0'; d3-- {
+				
+				// Print the combination
+				fmt.Printf("%c%c%c", d1, d2, d3)
+
+				// Print comma and space unless it's the very last combination (210)
+				if !(d1 == '2' && d2 == '1' && d3 == '0') {
+					fmt.Print(", ")
+				}
+			}
+		}
+	}
+	fmt.Println()
+}
+
+
+func PrintMemory(arr [10]byte) {
+
+	for i :=0; i<10 ; i++{
+		fmt.Printf("%02x", arr[i])
+
+		if (i+1)%4 == 0 || i == 9{
+			fmt.Println()
+		}else{
+			fmt.Print(" ")
+		}
+	}
+
+	for _, b := range arr {
+		if b >= 32 && b <= 126{
+			fmt.Printf("%0c", b)
+		}else{
+			fmt.Print(".")
+		}
+	}
+	fmt.Println()
+}
