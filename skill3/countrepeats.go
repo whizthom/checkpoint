@@ -25,6 +25,7 @@ func countRepeat(s string)int{
 			repeated++
 		}
 	}
+	
 return repeated
 }
 

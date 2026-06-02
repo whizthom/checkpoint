@@ -16,12 +16,11 @@ func LastWord(s string) string{
 // A word is a section of string delimited by spaces or by the start/end of the string.
 
 func LastWord1 (s string) string{
+	
 	s = strings.TrimSpace(s)
+
 	words := strings.Fields(s)
 
-	if len(s) == 0{
-		return "\n"
-	}
 
 	return words[len(words)-1] + "\n"
 }

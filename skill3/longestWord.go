@@ -1,28 +1,27 @@
 package main
-import "strings"
 
+import (
+	"strings"
+)
 
-// QUESTION:
-// Given a sentence, return the longest word.
-// If tie, return the first longest.
-
-func LongestWord(s string) string{
-
-	s = strings.TrimSpace(s)
-
+func LongestWord(s string) string {
+	// 1. Split the string into words
 	words := strings.Fields(s)
 
-	longest := words[0]
-
-	if len(words) == 0{
-			return ""
+	// 2. Handle empty input case immediately
+	if len(words) == 0 {
+		return ""
 	}
-	 
-	for _, ch := range words{
 
-		if len(ch) > len(longest){
-			longest = ch
+	longest := ""
+
+	// 3. Iterate through the words
+	for _, word := range words {
+		// Strictly greater than ensures we keep the first occurrence in a tie
+		if len(word) > len(longest) {
+			longest = word
 		}
 	}
+
 	return longest
 }

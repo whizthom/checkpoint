@@ -58,22 +58,22 @@ func main() {
 	// fmt.Println(HashCode1("Hello World")) // Output: Spwwz+bz}wo
 
 	// Last Word
-	// fmt.Println(LastWord1("hello world")) // "world"
-	// fmt.Println(LastWord1("  learning go ")) // "go"
+	fmt.Println(LastWord1("hello world")) // "world"
+	fmt.Println(LastWord1("  learning go ")) // "go"
 
 	// Longest Word
 	// fmt.Println(LongestWord("go is expressive and powerful"))
 	// fmt.Println(LongestWord("one two three"))
 
 	// RepeatAlpha
-	fmt.Println(RepeatAlpha("abc")) // a bb ccc
-	fmt.Println(RepeatAlpha("A!c"))
-	fmt.Println(RepeatAlpha("Choumi."))
-	fmt.Println(RepeatAlpha(""))
-	fmt.Println(RepeatAlpha("abacadaba 01!"))
+	// fmt.Println(RepeatAlpha("abc")) // a bb ccc
+	// fmt.Println(RepeatAlpha("A!c"))
+	// fmt.Println(RepeatAlpha("Choumi."))
+	// fmt.Println(RepeatAlpha(""))
+	// fmt.Println(RepeatAlpha("abacadaba 01!"))
 
-	// WORD ANATOMY
-	fmt.Println(WordAnatomy("golang"))
-	fmt.Println(WordAnatomy("hello"))
+	// // WORD ANATOMY
+	// fmt.Println(WordAnatomy("golang"))
+	// fmt.Println(WordAnatomy("hello"))
 
 }

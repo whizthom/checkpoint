@@ -16,13 +16,12 @@ func printIfGreaterThan10(n int) {
 // If its an empty string return G followed by a newline \n.
 
 
-func PrintIf(str string) string{
+func PrintIf(str string) string {
+	// If length is 3 or more, return "Invalid Input" + newline
+	if len(str) >= 3 {
+		return "Invalid Input\n"
+	}
 
-    if len(str) >= 3{
-        return "G"
-    } else {
-        return "Invalid"
-    }
-
-    return ("\n")
+	// For empty strings or strings with length 1 or 2, return "G" + newline
+	return "G\n"
 }

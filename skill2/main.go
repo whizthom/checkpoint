@@ -56,9 +56,9 @@ func main() {
 	// fmt.Println(RectPerimeter(10, -2))
 
 	// RETAIN FIRST HALF
-	fmt.Println(RetainFirstHalf("This is the 1sthalfThis is the 2nd half"))
-	fmt.Println(RetainFirstHalf("A"))
-	fmt.Println(RetainFirstHalf(""))
-	fmt.Println(RetainFirstHalf("Hello world"))
+	// fmt.Println(RetainFirstHalf("This is the 1sthalfThis is the 2nd half"))
+	// fmt.Println(RetainFirstHalf("A"))
+	// fmt.Println(RetainFirstHalf(""))
+	// fmt.Println(RetainFirstHalf("Hello world"))
 
 }

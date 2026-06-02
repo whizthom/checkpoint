@@ -10,7 +10,7 @@ func firstWord (s string) string {
 		return ""
 	}
 
-	parts := strings.SplitN(s, " ", 2)
-	return parts[0]
+	parts := strings.SplitN(s, " ",2)
 
+	return parts[0]
 }

@@ -34,17 +34,18 @@ func DigitLen(n int)int{
 
 func DigitLen2(n, base int) int{
 
-	if base < 2 || base > 36{
+	if base < 2 || base > 36 {
 		return -1
 	}
 
-	if n < 0{
-		n = -n 
+	if n < 0 {
+		n = -n
 	}
 
-	count := 0
-	for n > 0{
-		n /= base
+	count:= 0
+
+	for n > 0 {
+		n = n/base
 		count++
 	}
 
