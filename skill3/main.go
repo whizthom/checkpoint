@@ -52,14 +52,14 @@ func main() {
 	// fmt.Println(HashCode("BAC"))
 	// fmt.Println(HashCode("Hello World"))
 
-	// fmt.Println(HashCode1("A"))           // Output: B
-	// fmt.Println(HashCode1("AB"))          // Output: CD
-	// fmt.Println(HashCode1("BAC"))         // Output: EDF
-	// fmt.Println(HashCode1("Hello World")) // Output: Spwwz+bz}wo
+	fmt.Println(HashCode1("A"))           // Output: B
+	fmt.Println(HashCode1("AB"))          // Output: CD
+	fmt.Println(HashCode1("BAC"))         // Output: EDF
+	fmt.Println(HashCode1("Hello World")) // Output: Spwwz+bz}wo
 
 	// Last Word
-	fmt.Println(LastWord1("hello world")) // "world"
-	fmt.Println(LastWord1("  learning go ")) // "go"
+	// fmt.Println(LastWord1("hello world")) // "world"
+	// fmt.Println(LastWord1("  learning go ")) // "go"
 
 	// Longest Word
 	// fmt.Println(LongestWord("go is expressive and powerful"))
