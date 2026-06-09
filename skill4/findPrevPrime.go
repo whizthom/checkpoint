@@ -6,21 +6,28 @@ package main
 //  function should return 0.
 
 func FindPrevPrime(nb int)int{
-	if nb < 1{
+	if nb < 2 {
 		return 0
 	}
 
-	for i := nb; i >= 2; i--{
+	for i:= nb; i >= 2; i--{
 		if isPrime(i){
 			return i
 		}
+		}
+		return 0
 	}
-	return 0
-}
 
-func isPrime(n int)bool{
-	if n < 2 { return false}
-	if n==2 || n == 3{ return true}
-	if n%2 == 0 || n %3 == 0 {return false}
-return true 
-}
+	func isPrime(n int)bool{
+
+		if n < 2 {
+			return false
+		}
+
+		for i:=2; i*i <= n; i++{
+			if n%i == 0{
+				return false
+			}
+		}
+		return true
+	}

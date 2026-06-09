@@ -18,6 +18,7 @@ func IsCapitalized(s string)bool{
 	for _, ch:= range s{
 		if ch == ' '{
 			newWord = true
+			continue
 		}else{
 			if newWord{
 				if ch >= 'a' && ch <= 'z'{

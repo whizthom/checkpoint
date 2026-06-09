@@ -18,7 +18,7 @@ import (
 // 987, 986, 985, 984, 983, 982, 981, 980, 976, ..., 310, 210$
 // $
 
-func main() {
+func printRevComb() {
 
 for first:='9'; first >= '2'; first --{
 	for second:='8'; second >= '1'; second --{
