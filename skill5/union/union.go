@@ -13,7 +13,7 @@ import (
 
 // If the number of arguments is different from 2, then the program displays a newline ('\n').
 
-func main() {
+func m() {
 	if len(os.Args) != 3 {
 		fmt.Println()
 		return
@@ -45,3 +45,23 @@ func main() {
 // $
 // $ go run . rien | cat -e
 // $
+
+func main(){
+	if len(os.Args) !=3{
+		fmt.Println()
+		return
+	}
+
+	combined := []rune(os.Args[1] + os.Args[2])
+
+	seen := [256]bool{}
+
+	for _, ch:= range combined{
+		if !seen[ch]{
+			seen[ch] = true
+			fmt.Printf("%c", ch)
+		}
+	} 
+
+	fmt.Println()
+}
