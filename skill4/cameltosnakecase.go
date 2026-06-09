@@ -66,7 +66,10 @@ func isUpper(ch rune) bool {
 }
 
 func toLower(ch rune) rune {
-    return ch + ('a' - 'A')
+	if ch >= 'A' && ch <= 'Z' {
+		return ch + ('a' - 'A')
+	}
+	return ch
 }
 
 func CamelToSnake(s string) string {

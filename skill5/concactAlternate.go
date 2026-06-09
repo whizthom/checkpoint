@@ -51,5 +51,5 @@ func ConcatAlternate(slice1, slice2 []int) []int {
 			result = append(result, smaller[i])
 		}
 	} 
-		return result 
+	return result 
 }

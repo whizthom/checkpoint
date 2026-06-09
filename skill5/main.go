@@ -37,4 +37,15 @@ func main() {
 	fmt.Println(ConcatSlice([]int{1, 2, 3}, []int{4, 5, 6}))
 	fmt.Println(ConcatSlice([]int{}, []int{4, 5, 6, 7, 8, 9}))
 	fmt.Println(ConcatSlice([]int{1, 2, 3}, []int{}))
+
+
+
+	fmt.Println("\n SAVE AND MISS________________________________________\n")
+
+	fmt.Println(SaveAndMiss("123456789", 3))
+	fmt.Println(SaveAndMiss("abcdefghijklmnopqrstuvwyz", 3))
+	fmt.Println(SaveAndMiss("", 3))
+	fmt.Println(SaveAndMiss("hello you all ! ", 0))
+	fmt.Println(SaveAndMiss("what is your name?", 0))
+	fmt.Println(SaveAndMiss("go Exercise Save and Miss", -5))
 }
