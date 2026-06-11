@@ -20,8 +20,11 @@ func main() {
 	// fmt.Println(DigitLen2(100, -1)) 
 
 	//First Word Slice
-	// fmt.Println(firstWord("hello world"))     // "hello"
-	// fmt.Println(firstWord("   golang rocks")) // "golang"
+
+	fmt.Println("\n FIRST WORD________________________________________\n")
+
+	fmt.Println(firstWord("hello world"))     // "hello"
+	fmt.Println(firstWord("   golang rocks")) // "golang"
 
 	// Fish and Chips
 	// fmt.Println(FishAndChips("I love fish and fish soup")) // Output: "I love chips and chips soup"
@@ -43,14 +46,7 @@ func main() {
 
 	// HASH CODE
 
-	// fmt.Println(HashCode("ABC")) // 198
-	// fmt.Println(HashCode("hello"))
-
-
-	// fmt.Println(HashCode("A"))
-	// fmt.Println(HashCode("AB"))
-	// fmt.Println(HashCode("BAC"))
-	// fmt.Println(HashCode("Hello World"))
+	fmt.Println("\n HASH CODE________________________________________\n")
 
 	fmt.Println(HashCode1("A"))           // Output: B
 	fmt.Println(HashCode1("AB"))          // Output: CD
@@ -58,19 +54,22 @@ func main() {
 	fmt.Println(HashCode1("Hello World")) // Output: Spwwz+bz}wo
 
 	// Last Word
-	// fmt.Println(LastWord1("hello world")) // "world"
-	// fmt.Println(LastWord1("  learning go ")) // "go"
+	fmt.Println("\n LAST WORD________________________________________\n")
+
+	fmt.Println(LastWord1("hello world")) // "world"
+	fmt.Println(LastWord1("  learning go ")) // "go"
 
 	// Longest Word
 	// fmt.Println(LongestWord("go is expressive and powerful"))
 	// fmt.Println(LongestWord("one two three"))
 
-	// RepeatAlpha
-	// fmt.Println(RepeatAlpha("abc")) // a bb ccc
-	// fmt.Println(RepeatAlpha("A!c"))
-	// fmt.Println(RepeatAlpha("Choumi."))
-	// fmt.Println(RepeatAlpha(""))
-	// fmt.Println(RepeatAlpha("abacadaba 01!"))
+	fmt.Println("\n REPEAT ALPHA________________________________________\n")
+	
+	fmt.Println(RepeatAlpha("abc")) // a bb ccc
+	fmt.Println(RepeatAlpha("A!c"))
+	fmt.Println(RepeatAlpha("Choumi."))
+	fmt.Println(RepeatAlpha(""))
+	fmt.Println(RepeatAlpha("abacadaba 01!"))
 
 	// // WORD ANATOMY
 	// fmt.Println(WordAnatomy("golang"))

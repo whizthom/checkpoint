@@ -1,6 +1,7 @@
 package main
 
-import "unicode"
+import 
+	"unicode"
 
 // Instructions
 // Write a function that converts a string from camelCase to snake_case.
@@ -18,6 +19,140 @@ import "unicode"
 // The word does not end on a capitalized letter (CamelCasE).
 // No two capitalized letters shall follow directly each other (CamelCAse).
 // Numbers or punctuation are not allowed in the word anywhere (camelCase1).
+
+
+func isLetter(ch rune)bool{
+    return ch >= 'a' && ch <= 'z' || ch >='A' && ch <= 'Z'
+}
+
+func isUpper(ch rune)bool{
+    return ch >= 'A' && ch <='Z'
+}
+
+func toLower(ch rune)rune{
+    if ch >= 'A' && ch <= 'Z'{
+        return ch + ('a' - 'A')
+    }
+    return ch
+}
+
+
+func CamelToSnake(s string)string{
+
+    word:= []rune(s)
+    length:=len(word)
+
+
+    if length == 0 {
+        return ""
+    }
+
+    for i, ch:=range word{
+
+        if !isLetter(ch){
+            return s
+        }
+
+        if i == length-1 && isUpper(ch){
+            return s
+        }
+
+        if i > 0 && isUpper(ch)  && isUpper(word[i-1]){
+            return s
+        }
+    }
+
+
+    result := []rune{}
+
+    for i, ch:= range word{
+
+        if isUpper(ch){
+            if i != 0 {
+                result = append(result, '_')
+            }
+            result = append(result, toLower(ch))
+        }else{
+            result = append(result, ch)
+        }
+    }
+
+    return string(result)
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 func CamelToSnake1(s string) string {
 	if len(s) == 0{
@@ -55,57 +190,5 @@ func CamelToSnake1(s string) string {
 			}
 		}
 	return string(result)
-}
-
-func isLetter(ch rune) bool {
-    return (ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z')
-}
-
-func isUpper(ch rune) bool {
-    return ch >= 'A' && ch <= 'Z'
-}
-
-func toLower(ch rune) rune {
-	if ch >= 'A' && ch <= 'Z' {
-		return ch + ('a' - 'A')
-	}
-	return ch
-}
-
-func CamelToSnake(s string) string {
-    if len(s) == 0 {
-        return ""
-    }
-
-    word := []rune(s)
-    length := len(word)
-
-    for i, ch := range word {
-        // No letters, numbers or punctuation allowed
-        if !isLetter(ch) {
-            return s
-        }
-        // Word cannot end on a capital letter
-        if i == length-1 && isUpper(ch) {
-            return s
-        }
-        // No two consecutive capital letters
-        if i > 0 && isUpper(ch) && isUpper(word[i-1]) {
-            return s
-        }
-    }
-
-    var result []rune
-    for i, ch := range word {
-        if isUpper(ch) {
-            if i != 0 {
-                result = append(result, '_')
-            }
-            result = append(result, toLower(ch))
-        } else {
-            result = append(result, ch)
-        }
-    }
-    return string(result)
 }
 

@@ -9,6 +9,7 @@ package main
 // If the string is empty return false.
 
 func IsCapitalized(s string)bool{
+
 	if len(s) == 0{
 		return false
 	}
@@ -18,15 +19,15 @@ func IsCapitalized(s string)bool{
 	for _, ch:= range s{
 		if ch == ' '{
 			newWord = true
-			continue
 		}else{
 			if newWord{
 				if ch >= 'a' && ch <= 'z'{
 					return false
 				}
 			}
-			newWord=false
+			newWord = false
 		}
 	}
+
 	return true
 }

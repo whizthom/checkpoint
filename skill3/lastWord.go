@@ -15,12 +15,20 @@ func LastWord(s string) string{
 // Write a function LastWord that takes a sentense and returns its last word followed by a \n.
 // A word is a section of string delimited by spaces or by the start/end of the string.
 
-func LastWord1 (s string) string{
-	
-	s = strings.TrimSpace(s)
+func LastWord1(s string) string {
+   
+	result := ""
+	inWord := false
 
-	words := strings.Fields(s)
+	for i := len(s)-1; i >= 0; i--{
 
+		if s[i] != ' '{
+			result = string(s[i]) + result
+			inWord = true
+		}else if inWord{
+			break
+		}
 
-	return words[len(words)-1] + "\n"
+	}
+	return result + "\n"
 }

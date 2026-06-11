@@ -28,10 +28,12 @@ func HashCode(s string)int{
 func HashCode1(dec string) string {
 	
 	size := len(dec)
-	result:= []byte{}
 
-	for _, ch:= range dec {
-		hash := (int(ch) + size) % 127
+	result := []byte{}
+
+	for _, ch:= range dec{
+
+		hash:= (int(ch) + size)%127
 
 		if hash < 33{
 			hash+=33

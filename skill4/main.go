@@ -3,7 +3,7 @@ import "fmt"
 
 func main(){
 	// CAMEL to SNAKE
-		fmt.Println("\nCAMEL TO SNAKE _________-------_______--______\n") // hello_world
+		fmt.Println("\nCAMEL TO SNAKE _________-------_______--______\n") 
 		fmt.Println(CamelToSnake("HelloWorld"))
 		fmt.Println(CamelToSnake("helloWorld"))
 		fmt.Println(CamelToSnake("camelCase"))
@@ -13,7 +13,7 @@ func main(){
 
 
 		// FindPrevPrime
-		fmt.Println("\nFIND PREV PRIME _________-------_______--______\n") // hello_world
+		fmt.Println("\nFIND PREV PRIME _________-------_______--______\n") 
 
 		tests := []int{5, 4, 10, 17, 1, 2, 100, -5}
 
@@ -22,19 +22,24 @@ func main(){
 	}
 
 	// FROM TO
-	// fmt.Print(FromTo(1, 10))
-	// fmt.Print(FromTo(10, 1))
-	// fmt.Print(FromTo(10, 10))
-	// fmt.Print(FromTo(100, 10))
+		fmt.Println("\n FROM TO _________-------_______--______\n") 
+
+	fmt.Print(FromTo(1, 10))
+	fmt.Print(FromTo(10, 1))
+	fmt.Print(FromTo(10, 10))
+	fmt.Print(FromTo(100, 10))
 
 
 	// Capitalized
-	// fmt.Println(IsCapitalized("Hello! How are you?"))
-	// fmt.Println(IsCapitalized("Hello How Are You"))
-	// fmt.Println(IsCapitalized("Whats 4this 100K?"))
-	// fmt.Println(IsCapitalized("Whatsthis4"))
-	// fmt.Println(IsCapitalized("!!!!Whatsthis4"))
-	// fmt.Println(IsCapitalized(""))
+
+		fmt.Println("\n CAPITALIZED _________-------_______--______\n") 
+
+	fmt.Println(IsCapitalized("Hello! How are you?"))
+	fmt.Println(IsCapitalized("Hello How Are You"))
+	fmt.Println(IsCapitalized("Whats 4this 100K?"))
+	fmt.Println(IsCapitalized("Whatsthis4"))
+	fmt.Println(IsCapitalized("!!!!Whatsthis4"))
+	fmt.Println(IsCapitalized(""))
 
 	//
 
