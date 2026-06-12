@@ -14,19 +14,20 @@ import "fmt"
 
 func PrintMemory(arr [10]byte) {
 
-	for i :=0; i<10 ; i++{
+	for i:=0; i < 10; i++{
 		fmt.Printf("%02x", arr[i])
 
 		if (i+1)%4 == 0 || i == 9{
 			fmt.Println()
 		}else{
-			fmt.Print(" ")
+			fmt.Println(" ")
 		}
 	}
 
-	for _, b := range arr {
-		if b >= 32 && b <= 126{
-			fmt.Printf("%0c", b)
+	for _, ch:= range arr{
+
+		if ch >= 32 && ch <= 126{
+			fmt.Printf("%c", ch)
 		}else{
 			fmt.Print(".")
 		}

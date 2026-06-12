@@ -37,19 +37,21 @@ func ConcatAlternate(slice1, slice2 []int) []int {
 
 	result := []int{}
 
-	var larger, smaller [] int
+    var larger,smaller [] int
 
-	if len(slice1) >= len(slice2) {
-		larger, smaller = slice1, slice2
-	}else{
-		larger, smaller = slice2, slice1
-	}
+    if len(slice1) >= len(slice2){
+            larger , smaller = slice1 , slice2
+    }else{
+        larger, smaller = slice2, slice1
+    }
 
-	for i:=0 ; i < len(larger) ; i++{
-		result = append(result, larger[i]) 
-		if i < len(smaller){
-			result = append(result, smaller[i])
-		}
-	} 
-	return result 
-}
+    for i:=0; i < len(larger); i++{
+        result = append(result, larger[i])
+
+        if i < len(smaller){
+            result = append(result, smaller[i])
+        }
+    }
+    return result
+    }
+

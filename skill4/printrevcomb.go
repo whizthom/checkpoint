@@ -20,16 +20,15 @@ import (
 
 func printRevComb() {
 
-for first:='9'; first >= '2'; first --{
-	for second:='8'; second >= '1'; second --{
-		for third:='7'; third >= '0'; third--{
-			fmt.Printf("%c%c%c",first,second,third)
-
-			if !(first=='2' && second == '1' && third == '0'){
-				fmt.Print(", ")
+	for first:= '9'; first >= '2'; first--{
+		for second:= first - 1; second >= '1'; second--{
+			for third:= second - 1; third >= '0' ; third--{
+				fmt.Printf("%c%c%c", first,second,third)
+				if !(first=='2' && second=='1' && third == '0'){
+					fmt.Printf(", ")
+				}
 			}
 		}
 	}
-}
-fmt.Println()
+	fmt.Println()
 }

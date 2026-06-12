@@ -50,7 +50,9 @@ func main(){
     // fmt.Println(Itoa(987654321))
 
 	// // Print Memory 
-	// PrintMemory([10]byte{'h', 'e', 'l', 'l', 'o', 16, 21, '*'})
+		fmt.Println("\n PRINT MEMORY _________-------_______--______\n") 
+
+	PrintMemory([10]byte{'h', 'e', 'l', 'l', 'o', 16, 21, '*'})
 
 	// ThirdTimeIsACharm
 	// fmt.Print(ThirdTimeIsACharm("123456789"))
@@ -59,20 +61,21 @@ func main(){
 	// fmt.Print(ThirdTimeIsACharm("12"))
 
 	// We are unique
-	// fmt.Println("We Are Unique")
+		fmt.Println("\n WE ARE UNIQUE _________-------_______--______\n") 
 
-	// fmt.Println(WeAreUnique("foo", "boo")) //2
-	// fmt.Println(WeAreUnique("", ""))	// -1
-	// fmt.Println(WeAreUnique("abc", "def")) //6
+
+	fmt.Println(WeAreUnique("foo", "boo")) //2
+	fmt.Println(WeAreUnique("", ""))	// -1
+	fmt.Println(WeAreUnique("abc", "def")) //6
 
 
 	//Zipstrings
-	// fmt.Println("(Zip Ztrings) \n----------------------------------------------------")
-	// fmt.Println(ZipString("YouuungFellllas")) // 1Y1o3u1n1g1F1e4l1a1s
-	// fmt.Println(ZipString("Thee quuick browwn fox juumps over the laaazy dog")) 
-	// //1T1h2e1 1q2u1i1c1k1 1b1r1o2w1n1 1f1o1x1 1j2u1m1p1s1 1o1v1e1r1 1t1h1e1 1l3a1z1y1 1d1o1g
-	// fmt.Println(ZipString("Helloo Therre!"))  
-    // //1H1e2l2o1 1T1h1e2r1e1!
+	fmt.Println("(Zip Ztrings) \n----------------------------------------------------")
+	fmt.Println(ZipString("YouuungFellllas")) // 1Y1o3u1n1g1F1e4l1a1s
+	fmt.Println(ZipString("Thee quuick browwn fox juumps over the laaazy dog")) 
+	//1T1h2e1 1q2u1i1c1k1 1b1r1o2w1n1 1f1o1x1 1j2u1m1p1s1 1o1v1e1r1 1t1h1e1 1l3a1z1y1 1d1o1g
+	fmt.Println(ZipString("Helloo Therre!"))  
+    //1H1e2l2o1 1T1h1e2r1e1!
 
 
 	// IS CAPITALISED
@@ -87,9 +90,9 @@ func main(){
 
 
 	// Print Rev Comb
-	// fmt.Println("(PrintRevComb) \n----------------------------------------------------")
+	fmt.Println("(PrintRevComb) \n----------------------------------------------------")
 
-	// printRevComb()
+	printRevComb()
 
 
 }

@@ -7,6 +7,8 @@ import (
 func main() {
 
 	// CAN JUMP
+	fmt.Println("\n CAN JUMP________________________________________\n")
+
 	input1 := []uint{2, 3, 1, 1, 4}
 	fmt.Println(CanJump(input1))
 

@@ -35,26 +35,24 @@ func SaveAndMiss1(arg string, num int) string {
 
 func SaveAndMiss(s string, num int) string {
 
-	if num <= 0{
+	if num <= 0 {
 		return s
 	}
 
-	runes := []rune(s)
-	result := []rune{}
-	length := len(runes)
+	runes:= []rune(s)
+	length:= len(runes)
+	result:=[]rune{}
+	save:=true
 
-	save:= true
+	for i:=0; i < length; i+=3{
 
-	for i:=0; i < length; i+=num{
 		if save{
-			end := 1 + num
-
+			end:= i + num
 			if end > length{
 				end = length
 			}
 			result = append(result, runes[i:end]...)
 		}
 	}
-	
 	return string(result)
 }

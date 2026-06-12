@@ -12,27 +12,28 @@ package main
 
 func WeAreUnique(str1, str2 string) int {
 
-	if len(str1) == 0 || len(str2) == 0{
+	if len(str1)==0 && len(str2)==0{
 		return -1
 	}
 
 	box := make(map[rune]int)
 
 	for _, ch:= range str1{
-		box[ch] |= 1
+		box[ch] |=1
 	}
 
-	for _, ch:= range str2{
-		box[ch] |= 2
+	for _, ch:=range str2{
+		box[ch] |=2
 	}
 
-	count := 0
-	
-	for _, ch:= range box{
-		if ch == 1 || ch == 2{
+	count:=0
+
+	for _, val:= range box{
+
+		if val == 1 || val == 2{
 			count++
 		}
 	}
 
-	return count 
+	return count
 }

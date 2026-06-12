@@ -15,7 +15,7 @@ import (
 
 func ZipString(s string) string {
 	
-	if len(s) == 0{
+	if len(s)==0{
 		return ""
 	}
 
@@ -23,9 +23,10 @@ func ZipString(s string) string {
 	count := 1
 
 	for i:=1; i <= len(s); i++{
+		
 		if i == len(s) || s[i] != s[i-1]{
 			res += strconv.Itoa(count) + string(s[i-1])
-			count=1
+			count = 1
 		}else{
 			count++
 		}
